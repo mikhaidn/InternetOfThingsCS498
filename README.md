@@ -1,11 +1,5 @@
 # Internet of Things (CS498)
-Term: Fall 2020
-
-Institution: UIUC
-
-Instructor: Matthew Caesar
-
-Student: mikhaidn
+This repository is meant to reflect the work done by me (mikhaidn) for this Fall 2020 edition of the UIUC course.
 
 ## Course Description
 Students will learn IoT device programming (Arduino and Raspberry Pi), sensing and actuating technologies, IoT protocol stacks (Zigbee, 5G, NFC, MQTT, etc), networking backhaul design and security enforcement, data science for IoT, and cloud-based IoT platforms such as AWS IoT. Students will be guided through laboratory assignments designed to give them practical realworld experience, were they will deploy a distributed wifi monitoring service, a cloud-based IoT service platform serving tens of thousands of heartbeat sensors, and more
