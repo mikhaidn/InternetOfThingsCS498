@@ -1,5 +1,5 @@
 # Lab 1 - IoT Devices (Or, What the Heck Does IoT *Mean*?)
-**TLDR:** Create the internal system for object detecting car to avoid collision using a Raspberry Pi and model car chassis.
+**TLDR:** Use a Raspberry Pi to create the internal system for an object detecting car to avoid collision.
 
 **Deliverables:** 
 * A report that describes your experience in this lab and answers the following questions (tagged with /report) regarding the components of the car and the system itself
@@ -7,7 +7,7 @@
     * The IR component must have a `REPLACE_FUNCTION_NAME()` method
     * The PC component must have a `REPLACE_FUNCITON_NAME()` method
 
-## 1. Introduction and theoretical motivation
+## 1. Introduction and Theoretical Motivation
 * "Cloud computing" is a buzzword for distributed systems of on demand processing and memory storage.
 * In the same manner, "Internet of things" is a buzzword. What do you think IoT means? 
 * This lab will walk you through the development of an **obstacle avoidance and lane departure mitigation** system, like one seen on the 2019 Honda Civic. By creating this **Vehicular Network (VN) **, you will have implemented an IoT System. 
@@ -41,7 +41,7 @@ We will be implement and apply a VN to a programmable Raspberry Pi and car syste
 * Actuators provide control of a mechanical system.
 * Given a path towards a destination, control the motors of a car so that it can navigate that path as instructed (with minimal deviation)
 
- Just like in industry, a prototype must precede the real thing. Even if you were to work for Honda, you would first start with a simplified and (relatively cheaper) system like this.
+ Just like in industry, a prototype must precede the real thing. Even if you were to work for a company like Honda, you would first start with a simplified and (relatively cheaper) system like this.
 
 ## What do we need and how do we get setup?
 **Hardware (~$200-$240 USD)** - In order to get started on this lab, you will have to purchase/aquire the following material:
