@@ -124,8 +124,7 @@ Assuming the software setup is completed, the Raspberry Pi now has access to the
 * **Reflection Questions for the Report** /report
     * TBD
 
+### Disclaimer
+This write up was based off of the WIP Lab 1 for the real IoT course offered in the Fall 2020 term at UIUC: https://docs.google.com/document/d/1rH2qgqDB0XeqtBAclkbGU9wsZ4SfoHY8EVzEblF0TbI/edit?usp=sharing. (I am not the owner of this document)
 
-
-        
-
-
+While some revision was original, by and large the credit for this lab and its structure lay with Matt Caesar, his IoT TAs, and anyone else on his team contributing to the development for this course.
