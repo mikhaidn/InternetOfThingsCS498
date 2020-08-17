@@ -3,10 +3,11 @@
 
 **Deliverables:** 
 * A report that describes your experience in this lab and answers the following questions (tagged with /report) regarding the components of the car and the system itself
-* The python package which contains the image recognition (IR) and path creation (PC) components
+* The python package which contains the image recognition (IR), path creation (PC) and Actuator Controller (AC) acomponents
     * The IR component must have a `REPLACE_FUNCTION_NAME()` method
     * The PC component must have a `REPLACE_FUNCITON_NAME()` method
-
+    * The AC component must have a `REPLACE_FUNCITON_NAME()` method
+    
 ## 1. Introduction and Theoretical Motivation
 * "Cloud computing" is a buzzword for distributed systems of on demand processing and memory storage.
 * In the same manner, "Internet of things" is a buzzword. What do you think IoT means? 
