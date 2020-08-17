@@ -1,5 +1,5 @@
 # Lab 1 - IoT Devices (Or, What the Heck Does IoT *Mean*?)
-**TLDR:** Use a Raspberry Pi to create the internal system for an object detecting car to avoid collision.
+**TLDR:** Use a Raspberry Pi to create the internal system for an object detecting car to avoid collision. Once you're done, in your own words you should be able to describe what is a VN in a car, how it is an IoT system, conceptually understand how that abstracts to IoT networks in general.
 
 **Deliverables:** 
 * A report that describes your experience in this lab and answers the following questions (tagged with /report) regarding the components of the car and the system itself
