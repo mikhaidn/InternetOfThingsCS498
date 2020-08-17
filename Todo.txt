@@ -1,3 +1,9 @@
-* Join Discord
-* read https://docs.google.com/document/d/1rH2qgqDB0XeqtBAclkbGU9wsZ4SfoHY8EVzEblF0TbI/edit#heading=h.4v8y1vdaxu7g
-    * Purchase the Parts from page 2
+* Lab 1 - Get all items
+* Lab 1 - Set up software
+* Lab 1 - Analyze Lab 1, parts 2,3, report, and grading steps when available
+* Lab 1 - Part 1 - computer vision impl.
+* Lab 1 - Part 2 - path creation impl.
+* Lab 1 - Part 3 - actuator/mechanical control impl.
+* Lab 1 - report
+
+
