@@ -8,7 +8,7 @@
     * The PC component must have a `REPLACE_FUNCITON_NAME()` method
     * The AC component must have a `REPLACE_FUNCITON_NAME()` method
     
-## 1. Introduction and Theoretical Motivation
+## Introduction and Theoretical Motivation
 * "Cloud computing" is a buzzword for distributed systems of on demand processing and memory storage.
 * In the same manner, "Internet of things" is a buzzword. What do you think IoT means? 
 * This lab will walk you through the development of an **obstacle avoidance and lane departure mitigation** system, like one seen on the 2019 Honda Civic. By creating this **Vehicular Network (VN) **, you will have implemented an IoT System. 
@@ -29,7 +29,7 @@ Within a VN, there will be the following components:
 
 Special emphasis should be placed on the last two points. If a VN was simply the I/O components, then there wouldn't be a functional automated VN system. The I/O components need to be able to communicate with each other (e.g through wired ethernet) and there should be at least one "computer" to process inputs and decide on the outputs.
 
-## What are we doing in this Lab?
+### What are we doing in this Lab?
 We will be implement and apply a VN to a programmable Raspberry Pi and car system so that it can **avoid obstacles and stay on a lane**. This can be broken into three main problem statements.
 
 **1. A Computer Vision System**
@@ -44,7 +44,7 @@ We will be implement and apply a VN to a programmable Raspberry Pi and car syste
 
  Just like in industry, a prototype must precede the real thing. Even if you were to work for a company like Honda, you would first start with a simplified and (relatively cheaper) system like this.
 
-## What do we need and how do we get setup?
+## 0. What do we need and how do we get setup?
 **Hardware (~$200-$240 USD)** - In order to get started on this lab, you will have to purchase/aquire the following material:
 * Raspberry Pi
     * Raspberry Pi 4 (4 GB RAM) 
