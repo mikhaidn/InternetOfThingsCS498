@@ -7,6 +7,7 @@ Students will learn IoT device programming (Arduino and Raspberry Pi), sensing a
 ## Notable Links
 Links that are pertenant to the course requirements
 * [_coursera](https://www.coursera.org/learn/cs498iot/home/welcome)
+* [_slides](https://www.coursera.org/learn/cs498iot/supplement/e7BIE/course-slides-pdfs)
 * [Personal Course GitHub](https://github.com/mikhaidn/InternetOfThingsCS498)
 * [Example Syllabus](https://ws.engr.illinois.edu/sitemanager/getfile.asp?id=574)
 * [IOT Course Website](https://iot.cs.illinois.edu/)
