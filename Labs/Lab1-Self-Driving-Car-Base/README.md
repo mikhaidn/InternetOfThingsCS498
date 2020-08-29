@@ -1,4 +1,4 @@
-# Lab 1 - IoT Devices (Or, What the Heck Does IoT *Mean*?)
+# Lab 1 - IoT Self-Driving-CarBase
 **TLDR:** Use a Raspberry Pi to create the internal system for an object detecting car to avoid collision. Once you're done, in your own words you should be able to describe what is a VN in a car, how it is an IoT system, conceptually understand how that abstracts to IoT networks in general.
 
 **Deliverables:** 
@@ -38,12 +38,6 @@ We will be implement and apply a VN to a programmable Raspberry Pi and car syste
 **2. An Obstacle Avoidance System**
 * Given a signal that there is an(are) object(s) detected on the car's current path towards a pre-set destination, construct and update the path so that it would avoid colliding with the object(s)
 
-**3. An Actuation System**
-* Actuators provide control of a mechanical system.
-* Given a path towards a destination, control the motors of a car so that it can navigate that path as instructed (with minimal deviation)
-
- Just like in industry, a prototype must precede the real thing. Even if you were to work for a company like Honda, you would first start with a simplified and (relatively cheaper) system like this.
-
 ## 0. What do we need and how do we get setup?
 **Hardware (~$200-$240 USD)** - In order to get started on this lab, you will have to purchase/aquire the following material:
 * Raspberry Pi
@@ -53,24 +47,42 @@ We will be implement and apply a VN to a programmable Raspberry Pi and car syste
     * SD Reader on your computer (to download the OS image)
         * Some laptops/computers don't have this anymore, you'll need an adapter for your specific machine
 * Automobile
-    * Car Chassis Kit
-    * 18650 Batteries
-* Connecting your Pi to a keyboard, mouse, and monitor:
-    * Option 1: Connect the Pi to your Laptop
-        * Example tutorial: https://spin.atomicobject.com/2019/06/09/raspberry-pi-laptop-display/
-        * This is more technical but will not require any extra components
-    * Option 2: Connect an external mouse, keyboard, and monitor through the Pi's USB and HDMI ports
-        * Assuming you have all the components, this is much easier. If you don't have them, you'll have to decide if the the effort saved is worth the additional purchases.
+    * Car Chassis Kit (Sunfounder 4wd)
+    * Compatible power source (2x 18650 Batteries - I got 4 rechargable ones ~$22) 
+
+**Raspberry Pi Setup**
+
+Connecting your headless Pi (no monitor, keyboard, mouse)
+
+(If you know what you're doing, the whole process should take <30 minutes. If you're new, I'd allocate closer to 1-1.5 hrs)
+1. Download the imager: https://www.raspberrypi.org/downloads/
+2. Run the imager and follow it's steps to put the recommended OS onto your SD card
+3.  Add an empty `ssh` file to the root of the SD card (which should now have the OS) (to enable ssh acces)
+4. Add a `wpa_supplicant.conf` file to the root of the SD card based off of these instructions: https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+    * (Sample file: change country from US to your 2 letter ISO 3166-1 country code if not in USA. Also change the ssid (WiFi name, case sensitive) and psk (WiFi password))
+    ```
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    country=US
+
+    network={
+        ssid="WiFIName"
+        psk="WiFiPassword"
+        id_str="school"
+        priority=0
+    } 
+
+5. Power up your Pi and determine your IP address (either via admin access to router or through a network scanner)
+
+**Chassis Setup**
+1. Use this link and skip the Raspberry Pi Setup:  https://m.media-amazon.com/images/I/C1Tq1JjfipS.pdf
+2. Insert the PiCamera into the slit from the HAT and secure it onto the Pi  with the black cap
+
 
 **Software Setup**
 
 This setup is relatively complex with a steep learning curve if you're unfamiliar with Raspberry Pi's, linux-based OS, installing Tensorflow or python packages in general.  
 
-While it is important to learn how to confure all of this, many of the steps can be non intuitive when doing this for the first time. With that in mind, this is the setup stage for a reason. **PLEASE GET STARTED EARLY AND ASK FOR HELP IN THE DISCORD IF YOU GET STUCK IN THIS STAGE** The lab work doesn't *really* start until after all of these components have been completed.
-
-* Raspbian OS
-    * Use the SD card to transfer an image from your computer to the Pi
-    * https://www.pibakery.org/ is a good source to configure an image with WiFi and any other necessary settings
 * Python modules (open the Pi terminal to install them with `pip`)
     * The `picamera` module
         * `pip install --user picamera[array]`
@@ -103,7 +115,7 @@ Assuming the software setup is completed, the Raspberry Pi now has access to the
 
 * **Problem Statement** - Create a python package using the camera feed and TF CNNs to create a real time (~1 frame per second (FPS)) object detection system.
     * **NOTE** - Pi's, while crafty, don't have much computation power. 25fps is not realistic given the machine's specs and the Lab's time constraints
-
+    * You may also want to quantize intputs into 8bit integers to replace floating point precision to speed up computation
 * **Reflection Questions for the Report** /report
     * Quantized, low precision models, leverage 8 bit integers to replace floating point operations, they provide good performance for the Pi as well as other resource-constrained devices. **Why would this be true?**
     * Would hardware acceleration help in image processing? Have the packages mentioned above leveraged it?
