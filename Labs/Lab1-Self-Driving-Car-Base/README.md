@@ -41,14 +41,14 @@ We will be implement and apply a VN to a programmable Raspberry Pi and car syste
 ## 0. What do we need and how do we get setup?
 **Hardware (~$200-$240 USD)** - In order to get started on this lab, you will have to purchase/aquire the following material:
 * Raspberry Pi
-    * Raspberry Pi 4 (4 GB RAM) 
-    * 64 GB microSD (32 GB should also be fine)
-    * Pi camera module V2 
+    * Raspberry Pi 4 (4 GB RAM) - ([link](https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X/ref=sr_1_3?crid=38VN66MKQSZ1B&dchild=1&keywords=raspberry%2Bpi%2B4&qid=1591145209&sprefix=raspbe%2Caps%2C159&sr=8-3&th=1))
+    * 64 GB microSD (32 GB should also be fine) - ([link](https://www.amazon.com/Samsung-MicroSD-Adapter-MB-ME64GA-AM/dp/B06XX29S9Q/ref=sr_1_3?crid=JH4X6NM20EWT&dchild=1&keywords=64gb%2Bmicro%2Bsd%2Bcard&qid=1591155748&sprefix=64GB%2B%2Caps%2C168&sr=8-3&th=1))
+    * Pi camera module V2 - ([link](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_3?crid=3O6S20DI2X3GB&dchild=1&keywords=pi+camera+v2&qid=1591169917&sprefix=pi+camera+%2Caps%2C184&sr=8-3))
     * SD Reader on your computer (to download the OS image)
-        * Some laptops/computers don't have this anymore, you'll need an adapter for your specific machine
+        * Some laptops/computers don't have this anymore, you'll need an adapter for your specific machine - (Perhaps something like [this](https://www.amazon.com/SmartQ-C307-tarjetas-port%C3%A1til-individual/dp/B06ZYXR7DL/ref=sr_1_3?crid=CXV4X921BA7X&dchild=1&keywords=sd+card+reader&qid=1597945942&sprefix=sd+card+reeader%2Caps%2C166&sr=8-3))
 * Automobile
-    * Car Chassis Kit (Sunfounder 4wd)
-    * Compatible power source (2x 18650 Batteries - I got 4 rechargable ones ~$22) 
+    * Car Chassis Kit (Sunfounder 4wd) - ([link](https://www.amazon.com/dp/B087QKRX5J/ref=cm_sw_r_other_apa_i_3ho6Eb4Q207PC))
+    * Compatible power source (2x 18650 Batteries - I got 4 rechargable ones ~$22 - ([link](https://www.amazon.com/Rechargeable-Flashlight-18650-Batteries-Charger/dp/B089R8JZ78/ref=sr_1_8?dchild=1&keywords=18650+battery&qid=1597687533&sr=8-8)))
 
 **Raspberry Pi Setup**
 
