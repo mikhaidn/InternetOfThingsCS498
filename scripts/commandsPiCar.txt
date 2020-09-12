@@ -1,5 +1,8 @@
+# make sure you're in picar-4wd repo
+picar-4wd test motor
 picar-4wd test servo
 picar-4wd power-read
+# 
 picar-4wd soft-reset
 
 
