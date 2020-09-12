@@ -1,0 +1,14 @@
+picar-4wd test servo
+picar-4wd power-read
+picar-4wd soft-reset
+
+
+picar-4wd web-example
+picar-4wd web-example enable
+picar-4wd web-example disable
+
+cd /home/pi/picar-4wd/examples
+python3 keyboard_control.py
+python3 obstacle_avoidance.py
+python3 track_line.py
+python3 follow.py
