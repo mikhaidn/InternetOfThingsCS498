@@ -123,6 +123,21 @@ Assuming the software setup is completed, the Raspberry Pi now has access to the
     * Would multithreading help increase (or hurt) the performance of your program?
     * How would you choose the trade-off between frame rate and detection accuracy?
 
+* Basics of leveraging TensorFlow in object detection applications: 
+
+    * How to set up the camera on the Raspberry Pi https://www.raspberrypi.org/documentation/configuration/camera.md
+    * How to set up and use Tensorflow Lite on the Raspberry Pi: https://www.tensorflow.org/lite/guide/python
+    * Example code (please consider just repurposing this code, it will save you time): https://github.com/tensorflow/examples/blob/master/lite/examples/object_detection/raspberry_pi/README.md
+
+* Goals:
+    * Feed image stream into TF in order to recognize images 
+        * Sugested base model: Coco (Quantized and low precision 8-bit integers - good enough given our Pi's processing power)
+        * May want to train for road signs, traffic cones, etc
+        * image recognition ~ 1fps
+            * What object?
+            * how far in front?
+            * angle from center of car? (straight = 0deg, right = 90 deg, left = -90 deg)
+
 ## 2. An Obstacle Avoidance System
 
 * **Problem Statement** - TBD
